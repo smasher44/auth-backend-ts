@@ -1,3 +1,76 @@
+# Backend API Documentation
+
+This project provides a backend implementation with JWT-based authentication and an organized project structure. Below are the features and endpoints supported.
+
+---
+
+## Key Features
+
+1. **Proper Error Handling**  
+2. **JWT-Based Authentication**  
+3. **Password Hashing with bcrypt**  
+4. **Middleware for Protected Routes**  
+5. **Development Logging with Morgan**  
+6. **Environment Variable Configuration**  
+7. **Organized Project Structure**  
+
+---
+
+## Endpoints
+
+### **1. User Registration**
+
+**Endpoint:**  
+`POST /api/auth/register`  
+
+**Request Body:**  
+```json
+{
+  "email": "user@example.com",
+  "password": "password123"
+}
+```
+
+### **2. User Login**
+**Endpoint:**  
+`POST /api/auth/login`
+
+**Request Body:**  
+```json
+{
+  "email": "user@example.com",
+  "password": "password123"
+}
+```
+
+### **3. User Profile**
+**Endpoint:**  
+`GET /api/auth/profile`
+
+**Headers:**  
+`Authorization: Bearer <your-jwt-token>`
+
+
+**Description:**  
+Returns user profile information for authenticated users.
+
+
+### **4. Update User Credentials**
+**Endpoint:**  
+`PUT /api/auth/update-credentials`
+
+**Request Body:**  
+```json
+{
+  "currentPassword": "currentPassword123",
+  "newPassword": "newPassword123",
+  "newEmail": "newuser@example.com"
+}
+```
+
+**Description:**  
+Returns user profile information for authenticated users.
+
 # Key Improvements in the TypeScript Version
 
 ## Strong Typing for:
