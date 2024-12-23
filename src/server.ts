@@ -1,9 +1,9 @@
-// File: src/server.ts
 import express from 'express';
 import cors from 'cors';
 import morgan from 'morgan';
 import { config } from './config/config';
 import authRoutes from './routes/auth-routes';
+import testRoutes from './routes/test-routes';
 import { errorHandler } from './middleware/error-middleware';
 
 const app = express();
@@ -13,6 +13,7 @@ app.use(express.json());
 app.use(morgan('dev'));
 
 app.use('/api/auth', authRoutes);
+app.use('/api/test', testRoutes);
 app.use(errorHandler);
 
 app.listen(config.port, () => {
