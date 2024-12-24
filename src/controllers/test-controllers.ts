@@ -8,24 +8,63 @@ export const getTestData = async (
 ): Promise<void> => {
   try {
     // Sample test data
-    const testData = [
-      {
-        id: 1,
-        message: "Hello from the API!",
-        timestamp: new Date().toISOString()
-      },
-      {
-        id: 2,
-        message: "This is a test endpoint",
-        timestamp: new Date().toISOString()
-      },
-      {
-        id: 3,
-        message: "No authentication required",
-        timestamp: new Date().toISOString()
+    const testData = {
+      "id": 1,
+      "name": "John Doe",
+      "email": "john.doe@example.com",
+      "enrolled_courses": [
+          {
+              "course_id": "EE101",
+              "course_name": "Electrical Engineering Fundamentals",
+              "progress": {
+                  "completed_modules": 10,
+                  "total_modules": 20,
+                  "completion_percentage": 50
+              },
+              "quizzes": [
+                  {
+                      "quiz_id": "Q101",
+                      "quiz_name": "Basic Electrical Circuits",
+                      "score": 8,
+                      "total_score": 10,
+                      "date_taken": "2024-12-20"
+                  },
+                  {
+                      "quiz_id": "Q102",
+                      "quiz_name": "Ohm's Law and Power",
+                      "score": 7,
+                      "total_score": 10,
+                      "date_taken": "2024-12-21"
+                  }
+              ]
+          },
+          {
+              "course_id": "EE102",
+              "course_name": "Control Systems",
+              "progress": {
+                  "completed_modules": 5,
+                  "total_modules": 15,
+                  "completion_percentage": 33
+              },
+              "quizzes": [
+                  {
+                      "quiz_id": "Q201",
+                      "quiz_name": "Introduction to Control Systems",
+                      "score": 6,
+                      "total_score": 10,
+                      "date_taken": "2024-12-22"
+                  }
+              ]
+          }
+      ],
+      "analytics": {
+          "overall_completion_percentage": 42,
+          "average_quiz_score": 7.5,
+          "strengths": ["Basic Electrical Circuits", "Ohm's Law"],
+          "weaknesses": ["Control Systems Fundamentals"]
       }
-    ];
-
+    }
+  
     res.json({
       status: 'success',
       data: testData
@@ -33,7 +72,7 @@ export const getTestData = async (
   } catch (error) {
     res.status(500).json({
       status: 'error',
-      data: []
+      data: {} as any
     });
   }
 };
