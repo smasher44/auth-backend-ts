@@ -1,5 +1,5 @@
 export interface TestData {
-    id: number;
+    id: string;
     name: string;
     email: string;
     enrolled_courses: {
