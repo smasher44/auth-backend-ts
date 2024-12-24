@@ -9,7 +9,7 @@ export const getTestData = async (
   try {
     // Sample test data
     const testData = {
-      "id": 1,
+      "id": "503b-23af-a9c5-ab9c-e2c9-6223",
       "name": "John Doe",
       "email": "john.doe@example.com",
       "enrolled_courses": [
