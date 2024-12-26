@@ -10,34 +10,34 @@ export const getTestData = async (
     // Sample test data
     const testData = {
       "id": "503b-23af-a9c5-ab9c-e2c9-6223",
-        "user": {
-          "id": "503b-23af-a9c5-ab9c-e2c9-6223",
-          "name": "John Doe",
-          "email" : "john.doe@example.com",
-          "phone": "+1-555-123-4567",
-          "address": {
-              street: "123 Tech Avenue",
-              city: "Silicon Valley",
-              state: "CA",
-              zipCode: "94025"
-          },
-          education: {
-              degree: "Bachelor of Science",
-              major: "Electrical Engineering",
-              university: "Tech University",
-              graduationYear: 2023
-          },
-          profile: {
-              joinDate: "2024-01-15",
-              lastActive: "2024-12-26",
-              timezone: "UTC-8",
-              preferences: {
-                  notifications: true,
-                  language: "English",
-                  darkMode: true
-              }
-          },
-          subscriptionStatus: "premium",
+      "user": {
+        "id": "503b-23af-a9c5-ab9c-e2c9-6223",
+        "name": "John Doe",
+        "email" : "john.doe@example.com",
+        "phone": "+1-555-123-4567",
+        "address": {
+            "street": "123 Tech Avenue",
+            "city": "Silicon Valley",
+            "state": "CA",
+            "zipCode": "94025"
+        },
+        "education": {
+            "degree": "Bachelor of Science",
+            "major": "Electrical Engineering",
+            "university": "Tech University",
+            "graduationYear": 2023
+        },
+        "profile": {
+            "joinDate": "2024-01-15",
+            "lastActive": "2024-12-26",
+            "timezone": "UTC-8",
+            "preferences": {
+                "notifications": true,
+                "language": "English",
+                "darkMode": true
+            }
+        },
+        "subscriptionStatus": "premium",
       },
       "enrolled_courses": [
           {
