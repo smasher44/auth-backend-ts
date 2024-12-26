@@ -16,6 +16,6 @@
     "emitDecoratorMetadata": true,
     "typeRoots": ["./node_modules/@types", "./src/types"] // Add this line
   },
-  "include": ["src/**/*"],
+  "include": ["src/**/*", "scripts"],
   "exclude": ["node_modules", "dist"]
 }

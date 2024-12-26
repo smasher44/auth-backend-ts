@@ -8,7 +8,9 @@
     "dev": "nodemon",
     "build": "tsc",
     "lint": "eslint src/**/*.ts",
-    "format": "prettier --write src/**/*.ts"
+    "format": "prettier --write src/**/*.ts",
+    "create-tables": "ts-node scripts/create-tables.ts",
+    "insert-dummy-data": "ts-node scripts/insert-dummy-data.ts"
   },
   "keywords": [],
   "author": "",
@@ -19,7 +21,8 @@
     "dotenv": "^16.4.7",
     "express": "^4.21.2",
     "jsonwebtoken": "^9.0.2",
-    "morgan": "^1.10.0"
+    "morgan": "^1.10.0",
+    "pg": "^8.13.1"
   },
   "devDependencies": {
     "@types/bcryptjs": "^2.4.6",
@@ -28,6 +31,7 @@
     "@types/jsonwebtoken": "^9.0.7",
     "@types/morgan": "^1.9.9",
     "@types/node": "^22.10.2",
+    "@types/pg": "^8.11.10",
     "@typescript-eslint/eslint-plugin": "^8.18.1",
     "@typescript-eslint/parser": "^8.18.1",
     "eslint": "^9.17.0",
