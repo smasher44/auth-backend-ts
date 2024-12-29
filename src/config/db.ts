@@ -1,5 +1,5 @@
 // db.ts
-import { Pool, PoolConfig, QueryResult } from 'pg';
+import { Pool, QueryResult } from 'pg';
 
 interface DatabaseConfig {
   user: string;
@@ -10,8 +10,8 @@ interface DatabaseConfig {
   ssl: {
     rejectUnauthorized: boolean;
   };
-}
-
+} 
+ 
 class Database {
   private pool: Pool;
   private static instance: Database;

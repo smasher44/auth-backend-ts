@@ -49,3 +49,28 @@ app.use(errorHandler);
 // app.listen(config.port, () => {
 //   console.log(`Server running on port ${config.port}`);
 // });
+
+
+// Authentication Service
+// src
+// ├── config
+// │         ├─ config.ts
+// │         └─ db.ts // connection for postgresql
+// ├── controllers
+// │         ├─ auth-controllers.ts
+// │         └─ user-controllers.ts
+// ├── interfaces
+// │         ├─ auth-interfaces.ts
+// │         └─ user-interfaces.ts
+// ├── middleware
+// │         ├─ auth-middleware.ts
+// │         └─ user-middleware.ts
+// ├── routes
+// │         ├─ auth-routes.ts
+// │         └─ user-routes.ts
+// ├── scripts
+// │         ├─ create-table.ts
+// │         └─ insert-dummy-data.ts
+// ├── types
+// │         ├─ types.ts
+// └── server.ts
