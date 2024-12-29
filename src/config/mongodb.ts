@@ -10,7 +10,7 @@ const client = new MongoClient(uri, {
     deprecationErrors: true,
   },
   ssl: true,
-  tlsAllowInvalidCertificates: false, // Keep this false for production
+  tlsAllowInvalidCertificates: false,
   tlsCAFile: undefined, // Let MongoDB driver handle the CA certificates
 })
 
