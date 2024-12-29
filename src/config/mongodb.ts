@@ -8,7 +8,10 @@ const client = new MongoClient(uri, {
     version: ServerApiVersion.v1,
     strict: true,
     deprecationErrors: true,
-  }
+  },
+  ssl: true,
+  tlsAllowInvalidCertificates: false, // Keep this false for production
+  tlsCAFile: undefined, // Let MongoDB driver handle the CA certificates
 })
 
 export async function connectMongoDB() {
