@@ -1,9 +1,10 @@
 import { Router } from "express";
-import { getUsers } from "../controllers/user-controller";
+import { getUsers, getUserProgress } from "../controllers/user-controller";
 
 const router = Router();
 
 router.get("/", getUsers);
+router.get("/progress", getUserProgress);
 
 export default router;
 

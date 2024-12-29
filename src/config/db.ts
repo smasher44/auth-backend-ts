@@ -42,7 +42,7 @@ class Database {
     try {
       const client = await this.pool.connect();
       const result: QueryResult = await client.query('SELECT NOW()');
-      console.log('🟢 Database connected successfully!');
+      console.log('🟢 Postgresql Database connected successfully!');
       console.log('Server time:', result.rows[0].now);
       client.release();
     } catch (error) {
