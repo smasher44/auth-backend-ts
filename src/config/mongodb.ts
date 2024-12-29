@@ -9,9 +9,9 @@ const client = new MongoClient(uri, {
     strict: true,
     deprecationErrors: true,
   },
-  ssl: true,
-  tlsAllowInvalidCertificates: false,
-  tlsCAFile: undefined, // Let MongoDB driver handle the CA certificates
+  // ssl: true,
+  // tlsAllowInvalidCertificates: false,
+  // tlsCAFile: undefined, // Let MongoDB driver handle the CA certificates
 })
 
 let retries = 0;
